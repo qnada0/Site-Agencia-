@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: #60E8DE;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    flex: 20%;
+    /* border: 1px solid red; */
+    text-align:left;
+    margin-left: 10%;
+   
+}
+.logo h1{
+    /* margin-left: 20%;  */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 34px;
+    color: #180F4A; 
+}
+
+.menu{
+    flex: 70%;
+    /* border: 1px solid blue; */
+    text-align: right;
+    padding: 20px;
+    
+}
+
+.menu a{    
+    text-decoration: none;
+    color: #180F4A;
+    margin: 0 10px;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+.menu a:hover{
+    color: #FF2978;
+    border-top: #180F4A 4px solid;
+    
+}
+
+#botao{
+    background:#180F4A ;
+    color: azure;
+    margin-right: 15%;
+    margin-left: 5%;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+#botao:hover{
+    border: none;
+    background: #FF2978;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    background: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    font-family: "Poppins", serif;
+}
+
+.headline{
+    flex: 40%;
+    margin-left: 10%;
+/*border: 1px solid #180F4A; */
+}
+
+.headline h2{
+    font-size: 20px;
+    color: #180F4A;
+    margin-top: 20px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p{
+    font-size: 20px;
+    color: #180F4A;
+    margin-top: 20px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.btn{
+    background: #FF2978;
+    color: azure;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+
+}
+.btn:hover{
+    background: #180F4A;
+    border: none;
+}
+
+.img-headline{
+    flex: 40%;  
+    margin-right: 10%;
+   /* border: 1px solid #FF2978; */
+    align-items: center;
+    justify-content: flex-end;
+}
+
+section{
+    margin-top: 80px;
+    /* border: 1px solid #FF2978; */
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+    /* width: 90%; */
+}
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-weight:bold;
+    color: #180F4A;
+}
+
+.servicos{
+    display:inline-block;
+    margin-top: 5%;
+}
+
+.card{
+   display: inline-block;
+   width: 30%;
+   padding:20px;
+   margin: 1%;
+   border: 1px solid #FF2978;
+   border-radius: 10px;
+   cursor: pointer;   
+}
+
+.texto-oculto{
+    display: none;
+}
+
+.card:hover{
+    background: #FF2978;
+    color: azure;
+    padding: 40px;
+}
+
+.card:hover img{
+    display: none;
+}
+
+.card:hover .card-text{
+    display: none;
+}
+
+.card:hover .texto-oculto{
+    display: block;
+}
+footer{
+    margin-top: 100px;
+    height: 400px;
+    background-image:linear-gradient(180deg, #60E8DE, #180F4A);
+    text-align: center;
+    border-top:5px solid #FF2978;
+}
+.logo-rodape{
+    padding:100px;
+
+}
+.agencia{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 34px;
+    color: white; 
+
+}
+.whatsapp{
+    position: fixed;
+    font-size: 34px;
+    color: white;
+    bottom: 5px;
+    right: 5px; 
+}
+.sobre{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.sobre{
+    background: #f4f4f4;
+    padding:50px 0;
+    text-align: center;
+}
+.sobre h2{
+    font-size: 32px;
+    color:#333;
+}
+.sobre p{
+    font-size: 18px;
+    color:#666;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}   
+.historia {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
